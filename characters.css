@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url(./assets/electroharmonix.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(./assets/345187.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; */
+}
+#homeheader{
+    background-color:black;
+    display: flex;
+    font-family: 'CustomFont';
+    position: sticky;
+    top: 0;
+    align-items: center;
+}
+#dropdown{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#dalam-dropdown{
+    display: none;
+    position: absolute;
+    top: 9vh;
+    border: 3px solid red;
+    border-radius: 8px;
+    width: 17vh;
+}
+#tombol-dropdown {
+    background: transparent;
+    border: 3px solid red;
+    color: white;
+    padding: 3vh;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: 'CustomFont';
+    text-align: center;
+}
+#dalam-dropdown a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    background-color: black;
+    padding: 3vh 1vw;
+    border-radius: 8px;
+    text-align: center;
+
+}
+#dalam-dropdown a:hover{
+    background:red;
+    border-radius: 8px;
+
+}
+#dropdown:hover #dalam-dropdown{
+    display: block;
+    
+}
+/* #bgimage{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/345187.jpg);
+    background-size: cover;
+} */
+#Characters{
+    display: flex;
+    padding: 10vh 5vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.colum{
+    max-width: 20vw;
+    border:4px solid red;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.tulisan{
+    font-family: 'Customfont';
+}
+#footer{
+    display: flex;
+    background:black;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'CustomFont';
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 800px){
+    #Characters{
+        flex-direction: column;
+        align-items: center;
+    }
+    .colum{
+        display: block;
+        max-width: 30vw;
+        margin-bottom: 10px;
+    }
+    .colum img{
+        max-width:30vw;
+    }
+}

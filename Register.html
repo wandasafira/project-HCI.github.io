@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div id ="homeheader">
+        <img src="./assets/logoKenshin_1 (1).png" alt="">
+    <div id="dropdown">
+        <button id="tombol-dropdown">
+            Navigation
+        </button>
+        <div id="dalam-dropdown">
+            <a href="index.html"> Home </a>
+            <a href="Characters.html"> Characters </a>
+            <a href="Aboutgame.html"> About Game </a>
+            <a href="Gallery.html"> Gallery </a>
+            <a href="Register.html"> Register </a>
+        </div>
+    </div>
+    </div>
+
+    <div class="regBox">
+        <div class="box">
+            <div class="regPage">
+                <div class="title">Registration<br><br>
+                    <!-- <form action="" method="post"> -->
+                        <div>
+                            <div>
+                                <label for="txtEmail">E-mail<br></label>
+                                <input type="text" name="txtEmail" id="txtEmail">
+                                <br>
+                            </div>
+                            <label for="txtEmail" class="error" id="email-error"></label>
+                        </div>
+                        <br>
+                        <div>
+                            <div>
+                                <label for="txtUsername">Username<br></label>
+                                <input type="text" name="txtUsername" id="txtUsername">
+                                <br>
+                            </div>
+                            <label for="txtUsername" class="error" id="username-error"></label>
+                        </div>    
+                        <br>
+                        <div>
+                            <div>
+                                <label for="txtPassword">Password<br></label>
+                                <input type="password" name="txtPassword" id="txtPassword">
+                                <br>
+                            </div>
+                            <label for="txtPassword" class="error" id="password-error"></label>
+                        </div>
+                        <br>
+                        <div>
+                            <div>
+                                <label for="txtConfirmPassword">Confirm Password<br></label>
+                                <input type="password" name="txtConfirmPassword" id="txtConfirmPassword">
+                                <br>
+                            </div>
+                            <label for="txtConfirmPassword" class="error" id="confirm-password-error"></label>
+                        </div>    
+                        <br>
+                        <div>
+                            <div>
+                                <input type="checkbox" name="check" id="txtCheckbox">
+                                <label for="check">I agree to terms and conditions</label>
+                                <br>
+                            </div>
+                            <label for="txtCheckbox" class="error" id="checkbox-error"></label>
+                        </div>
+                        <br>
+                        <button onclick="submitForm()" id="submit">Submit</button>
+                    <!-- </form> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <h3>
+            ©2021 mihoyoman
+        </h3>
+    </div>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/scriptRegister.js"></script>
+</body>
+</html>

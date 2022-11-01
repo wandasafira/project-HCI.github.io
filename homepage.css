@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url(./assets/electroharmonix.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'CustomFont';
+}
+body{
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/345187.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#homeheader{
+    background-color:black;
+    display: flex;
+    font-family: 'CustomFont';
+    position: sticky;
+    top: 0;
+    align-items: center;
+}
+#dropdown{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#dalam-dropdown{
+    display: none;
+    position: absolute;
+    top: 9vh;
+    border: 3px solid red;
+    border-radius: 8px;
+    width: 17vh;
+    z-index: 2;
+}
+#tombol-dropdown {
+    background: transparent;
+    border: 3px solid red;
+    color: white;
+    padding: 3vh;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: 'CustomFont';
+    text-align: center;
+}
+#dalam-dropdown a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    background-color: black;
+    padding: 3vh 1vw;
+    border-radius: 8px;
+    text-align: center;
+}
+#dalam-dropdown a:hover{
+    background:red;
+    border-radius: 8px;
+
+}
+#dropdown:hover #dalam-dropdown{
+    display: block;
+    
+}
+
+.containerTombol{
+    width: 35vw;
+    margin: 40px auto;
+}
+
+#tombol1{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'CustomFont';
+}
+#tombol2{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'CustomFont';
+}
+#tombol{
+    padding: 1vh 5vw;
+    text-decoration: none;
+    text-align: center;
+}
+.button{
+    max-width: 25vw;
+    border: 3px solid red;
+    border-radius: 8px;
+    padding: 3vh;
+    background: black;
+    justify-content: space-around;
+}
+
+.container{
+    width: 640px;
+    margin: 40px auto;
+}
+
+.item-slider{
+    width: 640px;
+    height: 360px;
+    overflow: hidden;
+    float: right;
+    border: 3px solid red;
+    border-radius: 8px;
+}
+
+.item-slider img{
+    display: inline-block;
+    width: 640px;
+    height: 360px;
+}
+
+#prevBox{
+    color: white;
+    background-color: black;
+    float: left;
+    border: 3px solid red;
+    border-radius: 8px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+}
+
+#nextBox{
+    color: white;
+    background-color: black;
+    float: right;
+    border: 3px solid red;
+    border-radius: 8px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+}
+
+#footer{
+    display: flex;
+    background:black;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'CustomFont';
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 800px){
+    #tombol1, #tombol2 {
+        font-size: 0.7rem;
+    }
+    .container, .item-slider{
+        width: 360px;
+    }
+}
